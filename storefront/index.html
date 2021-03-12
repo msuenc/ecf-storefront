@@ -10,50 +10,10 @@
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Lien feuille de style perso -->
+    <link rel="stylesheet" href="style.css">
+
     <title>Catégories</title>
-
-    <!-- CSS personnalisé -->
-    <style>
-
-        .liens-nav {
-            text-decoration: none;
-            color : black;
-        }
-
-        .plates {
-            width: 25rem;
-            height: 30vh;
-        }
-
-        #bandeau {
-            background-image: url('./media/plates-header.jpg');
-            height: 50vh;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100vw auto;
-        }
-
-        .showbtns {
-            display: none;
-        }
-
-        #showbtns {
-            position: relative;
-        }
-
-        #showbtns:hover #imgHpbfd{
-            opacity: 0.6;
-        }
-
-        #showbtns:hover .showbtns {
-            display: inline-flex;
-            position: absolute;
-            z-index: 1;
-        }
-
-    
-
-    </style>
 
 </head>
 <body>
@@ -69,7 +29,7 @@
                   <ul class="navbar-nav justify-content-center text-uppercase">
 
                     <li class="nav-item active">
-                      <a class="nav-link liens-nav" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link liens-nav" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle liens-nav" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true">
@@ -100,7 +60,9 @@
                 <div class="text-uppercase">
                     <div class="dropdown">
                         <button class="btn btn-light dropdown-toggle liens-nav" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-                            My Cart (2)
+                            <a href="cart.html" class="liens-nav">
+                                My Cart (2)
+                            </a>
                         </button>
                         <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownMenuButton1">
 
@@ -194,10 +156,11 @@
                 </div>
 
                 <figcaption class="figure-caption text-center font-weight-light justify-content-center">
-                    
                     Kiriko
                     <h4 class="text-uppercase h5 text-center">
-                        Hand painted blue flat dish
+                        <a href="hand-painted-blue-flat-dish.html" class="liens-nav" style="color: unset;">
+                            Hand painted blue flat dish
+                        </a>
                     </h4>
                     <p class="font-weight-light text-center">$28.00</p>
 

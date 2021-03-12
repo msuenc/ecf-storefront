@@ -1,0 +1,53 @@
+/* Toutes les pages */
+
+.liens-nav {
+    text-decoration: none;
+    color : black;
+}
+
+/* Page index.html */
+
+.plates {
+    height: 30vh;
+}
+
+#bandeau {
+    background-image: url('./media/plates-header.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw auto;
+}
+
+.showbtns {
+    display: none;
+}
+
+#showbtns {
+    position: relative;
+}
+
+#showbtns:hover #imgHpbfd{
+    opacity: 0.6;
+}
+
+#showbtns:hover .showbtns {
+    display: inline-flex;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Page cart.html */
+
+#cart{
+    background-color: white;
+}
+
+.products {
+    width: 10rem;
+    height: 5rem;
+}
+
+#lien-cs {
+    color: black;
+}
